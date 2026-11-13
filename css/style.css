@@ -1,21 +1,23 @@
 /* ============================================
    المتغيرات العامة
 ============================================ */
-:root {
-    --primary: #d4af37;
-    --primary-dark: #b8860b;
-    --secondary: #1e293b;
-    --dark: #1e293b;
-    --darker: #0f172a;
-    --light: #f8fafc;
-    --gray: #64748b;
-    --gray-light: #e2e8f0;
+
+    :root {
+    --primary: #facc15;          /* ذهبي لامع */
+    --primary-dark: #eab308;     /* ذهبي غامق */
+    --secondary: #fde047;        /* أصفر ذهبي */
+    --dark: #0a0a0a;             /* أسود عميق */
+    --darker: #000000;           
+    --light: #171717;            /* أسود فاتح */
+    --gray: #9ca3af;             
+    --gray-light: #262626;       
     --white: #ffffff;
     --success: #10b981;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.7);
+    --shadow-lg: 0 20px 25px -5px rgba(250, 204, 21, 0.15); /* ظل ذهبي */
     --radius: 12px;
     --transition: all 0.3s ease;
+}
 }
 
 /* ============================================
