@@ -3,59 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الشخصي</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.3em;
-            margin-bottom: 15px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 30px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <meta name="description" content="موقع أحمد علي - مطور ويب محترف">
+    <title>أحمد علي | مطور ويب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>👋 مرحباً بالعالم!</h1>
-        <p>هذا موقعي الأول على GitHub Pages</p>
-        <p>تم إنشاؤه بنجاح ✅</p>
-        <a href="#" class="btn">اضغط هنا</a>
-    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i> أحمد علي
+            </a>
+            <button class="menu-toggle" aria-label="القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="about.html">من أنا</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="portfolio.html">أعمالي</a></li>
+                <li><a href="contact.html">اتصل بي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 مرحباً بك في موقعي</p>
+                <h1>أنا <span class="highlight">أحمد علي</span></h1>
+                <h2 class="hero-subtitle">مطوّر ويب ومصمم واجهات</h2>
+                <p class="hero-description">
+                    أصمم وأبني تجارب رقمية رائعة على الإنترنت. 
+                    متخصص في تطوير المواقع الحديثة والسريعة والمتجاوبة مع جميع الأجهزة.
+                </p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> استعرض أعمالي
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> تواصل معي
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"أحمد علي"</span>,
+  <span class="property">role</span>: <span class="string">"Full Stack Dev"</span>,
+  <span class="property">skills</span>: [
+    <span class="string">"HTML"</span>, <span class="string">"CSS"</span>,
+    <span class="string">"JavaScript"</span>, <span class="string">"React"</span>
+  ],
+  <span class="property">passion</span>: <span class="string">"Building 🚀"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3 data-count="50">0</h3>
+                <p>مشروع منجز</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="30">0</h3>
+                <p>عميل سعيد</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="5">0</h3>
+                <p>سنوات خبرة</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="15">0</h3>
+                <p>جائزة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات المختصرة -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">ماذا أقدم؟</h2>
+            <p class="section-subtitle">خدمات احترافية لتلبية جميع احتياجاتك</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>تطوير المواقع</h3>
+                    <p>بناء مواقع سريعة وعصرية باستخدام أحدث التقنيات مثل HTML5, CSS3, JavaScript.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>تصميم واجهات</h3>
+                    <p>تصميمات جذابة وسهلة الاستخدام تركز على تجربة المستخدم UI/UX.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>تجاوب كامل</h3>
+                    <p>مواقع تعمل بشكل مثالي على جميع الأجهزة: جوال، تابلت، وحاسوب.</p>
+                </div>
+            </div>
+            
+            <div class="center">
+                <a href="services.html" class="btn btn-primary">جميع الخدمات <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم دعوة للعمل -->
+    <section class="cta">
+        <div class="container">
+            <h2>هل لديك مشروع في ذهنك؟</h2>
+            <p>دعنا نحوّل فكرتك إلى واقع رقمي مذهل</p>
+            <a href="contact.html" class="btn btn-light">ابدأ مشروعك الآن</a>
+        </div>
+    </section>
+
+    <!-- تذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-code"></i> أحمد علي</h3>
+                    <p>مطور ويب شغوف بصناعة تجارب رقمية مميزة.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من أنا</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="portfolio.html">أعمالي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>تواصل معي</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> ahmed@example.com</li>
+                        <li><i class="fas fa-phone"></i> +20 100 000 0000</li>
+                        <li><i class="fas fa-map-marker-alt"></i> القاهرة، مصر</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>تابعني</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 أحمد علي. جميع الحقوق محفوظة. صُنع بـ ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="عودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
