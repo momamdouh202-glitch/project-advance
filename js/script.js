@@ -178,3 +178,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// ===== تبديل الوضع الفاتح والداكن =====
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // التحقق من الوضع المحفوظ مسبقاً
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'light') {
+        document.body.classList.add('light-mode');
+        if(themeToggle) themeToggle.textContent = '☀️';
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
+            
+            // تغيير شكل الأيقونة وحفظ الاختيار
+            if (document.body.classList.contains('light-mode')) {
+                this.textContent = '☀️';
+                localStorage.setItem('theme', 'light');
+            } else {
+                this.textContent = '🌙';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+});
